@@ -47,6 +47,18 @@ def fun_rps(task_usr, task_comp, comp, usr):
         return ('Computer wins and the task for you is ', task)
 
 
+yes_no = input("Are you ready to play the game ? Answer yes or no ? ").lower()
+
+task_usr = ['Lick the wall seven time', 'Do 10 squats', 'Do 50 pushups', 'Run accross the hall', 'propose the 3rd contact of your mobile']
+task_comp = ['Print random integers between 1 to 100', 'print the upper triangle of the matrix', 'Please run a program without bugs','Print a star pattern with alphabets','Print all the special characters']
+
+while(yes_no == 'yes'):
+    usr = rps()
+    comp = comp_rps()
+    print(fun_rps(task_usr,task_comp,comp,usr))
+
+    yes_no = input("Do u want to continue the game ? Answer yes or no ? ").lower()
+
 
 
 
